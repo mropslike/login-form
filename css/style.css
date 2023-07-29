@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.login-content{
+    display: flex;
+    width: 900px;
+    height: 600px;
+    padding: 35px 35px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-content > .left-side{
+    width: 50%;
+    background-color: #2a5dc4;
+    border-radius: 7px 0px 0px 7px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.login-content > .left-side > h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.login-content > .left-side > p{
+    color: rgba(255, 255, 255, 0.774);
+}
+.login-content > .left-side > span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: #0c4bca;
+    border-radius: 0px 35px 35px 0px;
+    filter: blur(39px);
+}
+.login-content > .right-side{
+    width: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.158);
+    border-radius: 0px 7px 7px 0px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    position: relative;
+}
+.login-content > .right-side > .logo{
+    color: rgb(44, 132, 233);
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.login-content > .right-side > .title{
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.733);
+    margin-top: 20px;
+}
+.login-content > .right-side > .describe{
+    color: gray;
+}
+.login-content > .right-side > .form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.login-content > .right-side > .form > div {
+    width: 70%;
+    margin-top: 10px;
+    height: 40px;
+    position: relative;
+}
+.login-content > .right-side > .form > div > input{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.144);
+}
+.login-content > .right-side > .form > div > i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+.login-content > .right-side > .form > a{
+    width: 70%;
+    text-align: right;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2a5dc4;
+    font-size: .9rem;
+}
+.login-content > .right-side > .form button{
+    width: 70%;
+    background-color: #285ac4;
+    border-radius: 7px;
+    height: 40px;
+    color: white;
+    border: 1px solid transparent;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.login-content > .right-side > .form button:hover{
+    background-color: unset;
+    border: 1px solid #285ac4;
+    color: #285ac4;
+}
+.login-content > .right-side .end{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.login-content > .right-side p{
+    color: gray;
+}
+.login-content > .right-side .end a{
+    text-decoration: none;
+    margin-left: 10px;
+}
